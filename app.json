@@ -12,16 +12,28 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.leluque.InspirarPedometer"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#ffffff",
+        "permissions": [
+          "VIBRATE",
+          "FOREGROUND_SERVICE"
+        ]
+      },
+      "package": "com.leluque.InspirarPedometer"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cab28280-26a0-4f70-b0a0-cf0041f1f1c0"
+      }
+    },
+    "owner": "leluque"
   }
 }
